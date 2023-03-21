@@ -28,6 +28,6 @@ const isCorrectLenght = (str, maxLenght) => {
   return (str.lenght <= maxLenght);
 };
 
-  export {getRandomInt,RandomInteger};
+  export {getRandomInt,isCorrectLenght};
 
   /* Используемый источник:https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random*/
