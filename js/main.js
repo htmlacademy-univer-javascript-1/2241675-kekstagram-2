@@ -2,7 +2,6 @@ function getRandomInt(from, before) {
 if (from < 0 || before < 0) {
 throw new RangeError('числа в диапазоне должны быть положительными')
 }
-}
 
 
 if (typeof from === 'string' || typeof before === 'string') {
@@ -19,7 +18,7 @@ if (from > before) {
   from= Math.ceil(from);
   before = Math.floor(before);
  return Math.floor(Math.random() * ( before - from + 1)) + from; //Максимум и минимум включаются
-
+}
 
 const isCorrectLenght = (str, maxLenght) => {
   if (typeof str !== 'string') {
