@@ -1,6 +1,7 @@
 function getRandomInt(from, before) {
-if (from < 0 || before < 0)
+if (from < 0 || before < 0) {
 throw new RangeError('числа в диапазоне должны быть положительными')
+}
 }
 
 
@@ -11,24 +12,23 @@ throw new RangeError ('Значение должно быть числовым, 
     return from;
   }
 if (from > before) {
-  [from, before]=[before, from]
+  [from, before]=[before, from];
 }
 
-{
+
   from= Math.ceil(from);
   before = Math.floor(before);
  return Math.floor(Math.random() * ( before - from + 1)) + from; //Максимум и минимум включаются
 
-}
 
-function isCorrectLenght (str, maxLenght) {
+const isCorrectLenght = (str, maxLenght) => {
   if (typeof str !== 'string') {
    throw new RangeError('Значение str должно быть строкой');
   }
 
   return (str.lenght <= maxLenght);
-}
+};
 
-  export {getRandomInt,RandomInteger}
+  export {getRandomInt,RandomInteger};
 
   /* Используемый источник:https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random*/
