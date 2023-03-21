@@ -3,10 +3,11 @@ if (from < 0 || before < 0)
 throw new RangeError('числа в диапазоне должны быть положительными')
 }
 
+
 if (typeof from === 'string' || typeof before === 'string') {
 throw new RangeError ('Значение должно быть числовым, не строкой');
 }
-  if (from === before) {
+  if (from === before) { 
     return from;
   }
 if (from > before) {
@@ -16,12 +17,13 @@ if (from > before) {
 {
   from= Math.ceil(from);
   before = Math.floor(before);
-  return Math.floor(Math.random() * ( before - from + 1)) + from; //Максимум и минимум включаются
+ return Math.floor(Math.random() * ( before - from + 1)) + from; //Максимум и минимум включаются
+
 }
 
 function isCorrectLenght (str, maxLenght) {
   if (typeof str !== 'string') {
-    throw new RangeError('Значение str должно быть строкой');
+   throw new RangeError('Значение str должно быть строкой');
   }
 
   return (str.lenght <= maxLenght);
