@@ -61,7 +61,7 @@ function getCommentId (){
 
 function generateComment(){
 const messageTexts = [];
-for (let i = 0, i < getRandomInt(1,2), i++) {
+for (let i = 0; i < getRandomInt(1,2); i++) {
 messageTexts.push(getRandomElements(MESSAGES));
 }
 return {
